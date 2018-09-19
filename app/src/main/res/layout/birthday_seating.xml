@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e97d30"
+        android:padding="5dp">
+        <!-- Lyla, Natalie, Me
+             Ben, Kunal, Kagure
+             Jennie, Omoju, Amy -->
+
+        <TextView
+            android:id="@+id/textview_lyla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#1842c1"
+            android:text="Lyla"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_natalie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1842c1"
+            android:text="Natalie"
+            android:layout_alignTop="@id/textview_lyla"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1842c1"
+            android:text="Me"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_kagure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textview_ben"
+            android:background="#1842c1"
+            android:text="Kagure"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_ben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#1842c1"
+            android:text="Ben"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_kunal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textview_ben"
+            android:background="#1842c1"
+            android:text="Kunal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_jennie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#1842c1"
+            android:text="Jennie"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_omoju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1842c1"
+            android:text="Omoju"
+            android:layout_above="@id/textview_jennie"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textview_amy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1842c1"
+            android:text="Amy"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>
