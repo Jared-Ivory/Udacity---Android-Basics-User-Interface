@@ -12,32 +12,84 @@
             LinearLayout: Vertical Column, Horizontal Row
             -->
     <!-- Adding 'Weights' to a child gives it a fraction of its parent layout -->
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="20dp"
-        >
+        android:orientation="vertical"
+        android:weightSum="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="#2196f3"
+            android:gravity="center"
             android:text="Guest List"
             android:textColor="#AED581"
-            android:textSize="30sp"
-            android:gravity="center"/>
-        <TextView
+            android:textSize="30sp" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#f2f2f2"
+            android:background="#ff0000">
 
-            android:text="Another Text Row"
-            android:textColor="#AED581"
-            android:textSize="20sp"
-            android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="Top Bar"
+                android:textColor="#AED581"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="Bottem Row"
+                android:textColor="#AED581"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="RightBar"
+                android:textColor="#AED581"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="Left Bar"
+                android:textColor="#AED581"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="Center Bar"
+                android:textColor="#AED581"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
